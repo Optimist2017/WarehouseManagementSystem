@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox prefHeight="566.0" prefWidth="431.0" spacing="12.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.addsupplierController">
+   <children>
+      <VBox alignment="CENTER">
+         <children>
+            <Text fill="#386df5" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Supplier">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Text>
+         </children>
+      </VBox>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Supplier Name :" />
+      <TextField fx:id="name" />
+      <Text layoutX="20.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Supplier Contact(s)  :" />
+      <TextArea fx:id="contact" prefHeight="67.0" prefWidth="411.0" />
+      <Text layoutX="20.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Supplier Address  :" />
+      <TextArea fx:id="address" layoutX="20.0" layoutY="153.0" prefHeight="80.0" prefWidth="411.0" />
+      <Text layoutX="20.0" layoutY="243.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Supplier Description  :" />
+      <TextArea fx:id="description" layoutX="20.0" layoutY="257.0" prefHeight="131.0" prefWidth="411.0" />
+      <VBox alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" onAction="#save" text="Save" />
+         </children>
+      </VBox>
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</VBox>

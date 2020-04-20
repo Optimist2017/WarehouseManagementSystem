@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox prefHeight="450.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.storeController">
+   <children>
+      <VBox prefHeight="52.0" prefWidth="700.0">
+         <children>
+            <Text fill="#3a61e1" strokeType="OUTSIDE" strokeWidth="0.0" text="Store">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Text>
+            <HBox alignment="CENTER_RIGHT" spacing="15.0">
+               <children>
+                  <Button layoutX="20.0" layoutY="79.0" mnemonicParsing="false" onAction="#loadproduct" text="Products" />
+                  <Button layoutX="20.0" layoutY="54.0" mnemonicParsing="false" onAction="#loadsupplier" text="Suppliers" />
+                  <Button layoutX="20.0" layoutY="154.0" mnemonicParsing="false" onAction="#loadbrand" text="Brand" />
+                  <Button layoutX="20.0" layoutY="104.0" mnemonicParsing="false" onAction="#loadcategory" text="Category" />
+               </children>
+            </HBox>
+         </children>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </VBox>
+      <VBox fx:id="container" prefHeight="200.0" prefWidth="100.0" VBox.vgrow="ALWAYS">
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </VBox>
+   </children>
+</VBox>

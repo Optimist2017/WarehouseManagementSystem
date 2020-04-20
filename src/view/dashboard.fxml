@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="538.0" prefWidth="711.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.dashboardController">
+   <left>
+      <VBox prefHeight="538.0" prefWidth="152.0" style="-fx-background-color: #01cafe;" BorderPane.alignment="CENTER">
+         <children>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Dashboard" textAlignment="CENTER" wrappingWidth="136.83203125" VBox.vgrow="ALWAYS">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Text>
+            <HBox alignment="CENTER_LEFT" onMouseClicked="#loadhome" prefHeight="79.0" prefWidth="152.0" style="-fx-background-color: #01b3e3;">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#loadhome" prefHeight="73.0" prefWidth="16.0" style="-fx-background-color: #00add2; -fx-text-fill: white;">
+                     <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@/view/home.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 18px;" text="Home" wrappingWidth="48.2431640625">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="10.0" />
+                     </HBox.margin>
+                  </Text>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets right="10.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" onMouseClicked="#loadstore" prefHeight="79.0" prefWidth="152.0" style="-fx-background-color: #01b3e3;">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#loadstore" prefHeight="73.0" prefWidth="16.0" style="-fx-background-color: #00add2; -fx-text-fill: white;">
+                     <graphic>
+                        <ImageView fitHeight="100" fitWidth="50" onMouseClicked="#loadstore" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@/view/store.png" />
+                           </image></ImageView>
+                     </graphic>
+                  </Button>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 18px;" text="Store" wrappingWidth="48.2431640625">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="10.0" />
+                     </HBox.margin>
+                  </Text>
+               </children>
+               <padding>
+                  <Insets right="10.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" onMouseClicked="#loadsales" prefHeight="79.0" prefWidth="152.0" style="-fx-background-color: #01b3e3;">
+               <children>
+                  <Button mnemonicParsing="false" prefHeight="73.0" prefWidth="16.0" style="-fx-background-color: #00add2; -fx-text-fill: white;">
+                     <graphic>
+                        <ImageView fitHeight="100" fitWidth="50" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@/view/sales.png" />
+                           </image></ImageView>
+                     </graphic>
+                  </Button>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 18px;" text="Sales" wrappingWidth="48.2431640625">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="10.0" />
+                     </HBox.margin>
+                  </Text>
+               </children>
+               <padding>
+                  <Insets right="10.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" onMouseClicked="#loademployee" prefHeight="79.0" prefWidth="152.0" style="-fx-background-color: #01b3e3;">
+               <children>
+                  <Button mnemonicParsing="false" prefHeight="73.0" prefWidth="16.0" style="-fx-background-color: #00add2; -fx-text-fill: white;">
+                     <graphic>
+                        <ImageView pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                  </Button>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 18px;" text="Employee" wrappingWidth="83.2431640625">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="10.0" />
+                     </HBox.margin>
+                  </Text>
+               </children>
+               <padding>
+                  <Insets right="10.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" onMouseClicked="#loadsetting" prefHeight="79.0" prefWidth="152.0" style="-fx-background-color: #01b3e3;">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#loadsetting" prefHeight="73.0" prefWidth="16.0" style="-fx-background-color: #00add2; -fx-text-fill: white;">
+                     <graphic>
+                        <ImageView pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                  </Button>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 18px;" text="Settings" wrappingWidth="77.2431640625">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="10.0" />
+                     </HBox.margin>
+                  </Text>
+               </children>
+               <padding>
+                  <Insets right="10.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="79.0" prefWidth="152.0" style="-fx-background-color: #01b3e3;">
+               <children>
+                  <Button mnemonicParsing="false" prefHeight="73.0" prefWidth="16.0" style="-fx-background-color: #00add2; -fx-text-fill: white;">
+                     <graphic>
+                        <ImageView pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                  </Button>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 18px;" text="About" wrappingWidth="64.2431640625">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="10.0" />
+                     </HBox.margin>
+                  </Text>
+               </children>
+               <padding>
+                  <Insets right="10.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+      </VBox>
+   </left>
+   <center>
+      <VBox fx:id="container" alignment="CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>
